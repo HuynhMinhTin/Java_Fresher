@@ -3,18 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mini File Sharing</title>
+	<!-- Google icon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- icon for Web -->
+    <link rel="icon" href="../image/icon.png">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- jQuery -->	
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/layout-header-class.css">
-	<!-- jQuery -->
+	
 </head>
 <body>
 	<!-- header -->
 	<header>
-		<div class="row">
-			<div class="col logo">logo</div>
-			<div class="col-10 direction">
-				<div class="row">Name Team</div>
+		<div class="row header">
+			<div class="col logo">
+				<img src="../image/logo.png" alt="brand">
+			</div>
+			<div class="col-6 direction">
+				<div class="row">
+					<h2 class="col h2">Name Team</h2>					
+				</div>
 				<div class="row">
 					<ul class="nav">
 						<li class="nav-item">
@@ -27,60 +40,116 @@
 							<a class="nav-link" href="#">Link 2</a>
 						</li>					  
 					</ul>
-				</div>
+				</div>				
 			</div>	
+			<div class="col">
+				
+			</div>
 		</div>		
 	</header>
-	<!-- content -->
 
+	<!-- content -->
 	<main>
+		<!-- add file button -->		
+		<button type ="button" class="btn btn-outline-primary add-file">
+			<i class="material-icons">note_add</i>
+		</button>
 		<!-- upload file -->
-		<div class="col">
-			<button type ="button" class="btn btn-outline-primary">
-				Plus
-			</button>
-		</div>
-		<!-- search nav -->
-		<div class="col-10">
-			<form class="form-inline">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>			
-		</div>    	
+		<div class="row">			
+			<!-- search nav -->
+			<div class="col search-nav">
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>			
+			</div>
+		</div>		   
 
 		<div class="row">
 			<!-- category -->		
-			<div class="col-2">
-				<h6 class="h6">category</h6>
-				<ul class="nav nav-pills flex-column">
-				  <li class="nav-item">
-				    <a class="nav-link active" href="#">category 1</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">category 2</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">category 3</a>
-				  </li>				  
-				</ul>
+			<div class="col-2 category">
+				<h6 class="title">category</h6>
+				<!-- <div class=""> -->
+					<ul class="nav nav-pills flex-column">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#">category 1</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">category 2</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">category 3</a>
+					  </li>				  
+					</ul>
+				<!-- </div> -->
 			</div>
 			<!-- file list -->
 			<div class="col-10">
-				<div class="row">
-					<div class="col card">
-					  <img class="card-img-top" src="../image/file.png" alt="File 1">
-					  <div class="card-body">
-					    <h5 class="card-title">File title</h5>
-					    <p class="card-text">File comment</p>
-					    <a href="#" class="btn btn-primary">File details</a>
-					  </div>
-					</div>	
-				</div>			
+				<div class="container">
+					<div class="row">
+						<div class="card-deck">
+						  <div class="card">
+						    <img class="card-img-top file">
+						    
+						    <div class="card-body">
+						      <h5 class="card-title">File title 1</h5>
+						      <p class="card-text">File 1.</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img class="card-img-top file">
+						    <div class="card-body">
+						      <h5 class="card-title">File title 2</h5>
+						      <p class="card-text">File 2.</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img class="card-img-top file">
+						    <div class="card-body">
+						      <h5 class="card-title">File title 3</h5>
+						      <p class="card-text">File 3.</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img class="card-img-top file">
+						    <div class="card-body">
+						      <h5 class="card-title">File title 4</h5>
+						      <p class="card-text">File 3.</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img class="card-img-top file">
+						    <div class="card-body">
+						      <h5 class="card-title">File title 5</h5>
+						      <p class="card-text">File 3.</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						</div>	
+					</div>
+				</div>										
 			</div>
 		</div>
-	</main>
 
+	</main>
 		
 	<!-- footer -->
+	<footer class="footer">
+		<div class="row">
+			<div class="col">
+				<h6 class="h6">about</h6>
+				<p></p>
+			</div>
+			<div class="col">
+				<h6 class="h6">contact</h6>
+				<p></p>
+			</div>
+		</div>
+	</footer>
+	<script src="../jQuery/image-file.js"></script>
 </body>
 </html>
