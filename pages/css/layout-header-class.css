@@ -1,17 +1,17 @@
-.nav-item a:link{
+/*-------tag--------*/
+.nav-item a{
 	font-family: 'Lato', sans-serif;
-	color: white;
-	font-size: 20px;
+	color: white;		
 }
 
+.logo >
 img{
-	height: 80px;	
-	padding-left: 50px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	height: 60px;
 }
 
-/*.row div{text-align: center;}*/
+main{
+	margin-top: 100px;
+}
 
 .active{
 	color: ##007bff;
@@ -24,16 +24,27 @@ img{
 .dropdown-menu{background-color: #333333}
 
 .header{
-	height: 80px;
+	position: fixed;
 	background-color: #333333;
+	z-index: 100;
+	height: 60px;	
 	color: white;
+	top: 0;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	/*display: block;*/
 }
 
 .footer{
 	position: fixed;
+	z-index: 100;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: #333333;
 }
 
@@ -53,13 +64,9 @@ img{
 	font-family: 'Lato', sans-serif;
 }
 
-.search-nav{
-	text-align: right;
-	background-color: #
-}
-
-.form-inline{
-	text-align: right;
+.form-inline{	
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .file{
@@ -86,4 +93,12 @@ img{
 
 main .row{
 	padding-top: 10px;
+}
+
+.text-white{
+	color: white;
+}
+
+.material-icons{
+	font-size: 50px;
 }
