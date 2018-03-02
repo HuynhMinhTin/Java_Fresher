@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mini File Sharing</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/layout-header-class.css">
+	<!-- jQuery -->
+	
+</head>
+<body >
+<form method="get" >
+	<div class="form-inline">	
+		<div class="card">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  >
+		</div>
+		<div class="card">
+				<button onclick="if(document.getElementById('spoiler') .style.display=='none') 
+				{document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}" 
+				title="Click to show/hide" type="button">more</button>
+			<div id="spoiler" style="display: none;">
+			<div class="form-group">
+					<label for="">Category</label>
+							<select name="orderby" class="form-control" id="category">
+							<option value="0">--- Category---</option>
+							<option value="popularity">Động vật</option>
+							<option value="rating">Phim, ảnh</option>
+							<option value="date">Game</option>
+					</select>
+			</div>
+			<div class="form-group">
+					<label for="">Uploader</label>
+						<input type="text" class="form-control" name="uploader" placeholder="Uploader...">
+			</div>
+			<div class="form-group">
+					<label for="">Size</label>
+						<select name="size" class="form-control" id="size">
+							<option value="0">--- Chọn dung lượng---</option>
+							<option value=”35″>từ 30mb đến 40mb</option>
+							<option value=”46″>Từ 41mb đến 60mb</option>
+							<option value=”68″>Từ 61mb đến 80mb</option>
+						<option value=”812″>Từ 81mb trở lên</option>
+						</select>
+			</div>
+			</div>
+		</div>
+	</div>
+
+		  <button type="submit" class="search-button">Tìm kiếm</button>
+
+ </form>
+</body>
+</html>
