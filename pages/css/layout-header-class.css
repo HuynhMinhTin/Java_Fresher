@@ -9,19 +9,23 @@ img{
 	height: 60px;
 }
 
-main{
-	margin-top: 100px;
-}
-
+/*---------class----------*/
 .active{
-	color: ##007bff;
+	color: #007bff;
 }
 
 .category{
 	text-align: center;
+	width: 150px;
+	float: left;
+	/*background-color: #AAAAAA;*/
 }
 
-.dropdown-menu{background-color: #333333}
+.file-list{
+	width: 70%;
+}
+
+.dropdown-menu{ background-color: #333333 }
 
 .header{
 	position: fixed;
@@ -31,12 +35,9 @@ main{
 	color: white;
 	top: 0;
 	width: 100%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 20px;
-	/*display: block;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;	
 }
 
 .footer{
@@ -53,20 +54,11 @@ main{
 	color: white;
 }
 
-.container{
-	text-align: center;
-}
-
 .h2,
 .h6{
 	text-transform: uppercase;
 	color: white;
 	font-family: 'Lato', sans-serif;
-}
-
-.form-inline{	
-	margin-left: auto;
-    margin-right: auto;
 }
 
 .file{
@@ -78,8 +70,11 @@ main{
     z-index: 100;
     bottom: 20%;
     left: 90%;
-    right: 10%;
-    background-color: #333333;
+    right: 10%;    
+    background-image: url('../image/note_add.png');
+    height: 48px;
+    width: 48px;
+    border-radius: 50%
 }
 
 .title{
@@ -89,16 +84,81 @@ main{
 	font-family: 'Lato', sans-serif;
 }
 
-.nav.nav-pills.flex-column{	background-color: #333333;}
-
-main .row{
-	padding-top: 10px;
+.nav.nav-pills.flex-column{	
+	background-color: #333333;
+	border-radius: 5px;
 }
 
 .text-white{
 	color: white;
 }
 
-.material-icons{
+.brand{
 	font-size: 50px;
+}
+
+.account{
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+.registry-guest{
+	/*display: none;*/
+}
+
+.registry-user{
+	display: none;
+	text-align: right;
+}
+
+.dropdown-menu{
+	color: white;
+	/*padding-left: 8px;*/
+}
+
+.dropdown-item{
+	color: white;
+}
+
+.dropdown-item:hover{
+	background-color: #007bff;
+}
+
+.margin-left-8{
+	margin-left: 8px;
+}
+
+.margin-bottom-15{
+	margin-bottom: 15px;
+}
+
+.margin-top-60{
+	margin-top: 60px;	
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.shadow-bottom{
+	box-shadow: 0 4px 6px #888888;
+}
+
+.card-deck{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.padding-search-bar{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.card-body{
+	padding: 5px;
+}
+
+.text-center{
+	text-align: center;
 }
