@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+
+	<definition name="main.base.definition" 
+		template="/assets/templates/templateAdminLogin.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+	<definition name="main.base.definition2" 
+		template="/assets/templates/blankTemplate.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+	<definition name="login" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/main/login.jsp"></put-attribute>
+	</definition>
+
+	<definition name="welcome" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/main/welcome.jsp"></put-attribute>
+	</definition>
+	<definition name="403" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/main/403.jsp"></put-attribute>
+	</definition>
+	<definition name="admin" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/main/admin.jsp"></put-attribute>
+	</definition>
+	<definition name="employee" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/main/employee.jsp"></put-attribute>
+	</definition>
+	<definition name="index" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/upload/index.jsp"></put-attribute>
+	</definition>
+
+	
+	<definition name="simpleupload" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/upload/simpleupload.jsp"></put-attribute>
+	</definition>	
+	<definition name="upload_success" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/upload/upload_success.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="multiplelanguage" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/multiplelanguage/index.jsp"></put-attribute>
+	</definition>
+	<!--  Excel-->
+	<definition name="importexcel" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/excel/index.jsp"></put-attribute>
+	</definition>	
+	<definition name="excelsuccess" extends="main.base.definition">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/excel/success.jsp"></put-attribute>
+	</definition>
+	<!-- Jasper -->
+	<definition name="report" extends="main.base.definition2">
+		<put-attribute name="content" 
+			value="/WEB-INF/jsp/report/index.jsp"></put-attribute>
+	</definition>	
+</tiles-definitions>

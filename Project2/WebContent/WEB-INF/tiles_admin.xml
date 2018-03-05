@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="admin.base.definition" 
+		template="/assets/templates/templateAdmin2.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+
+	
+<!-- Category -->
+	
+	<definition name="admin.category.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/category/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.category.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/category/register.jsp"></put-attribute>
+	</definition> 
+	<definition name="admin.category.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/category/detail.jsp"></put-attribute>
+	</definition> 
+	
+	<!-- Product -->
+	
+	<definition name="admin.product.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/product/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.product.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/product/register.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.product.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/product/detail.jsp"></put-attribute>
+	</definition> 
+	
+	<definition name="admin.product.productdetail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/product/productdetail.jsp"></put-attribute>
+	</definition> 
+	<!-- Account -->
+	
+	<definition name="admin.account.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/account/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.account.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/account/register.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.account.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/account/detail.jsp"></put-attribute>
+	</definition>
+	
+	
+	<!-- Role -->
+	<definition name="admin.role.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/role/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.role.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/role/register.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.role.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/role/detail.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Order -->
+	<definition name="admin.order.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/order/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.order.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/order/register.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.order.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/order/detail.jsp"></put-attribute>
+	</definition>
+	<!-- Order Detail-->
+	
+	<definition name="admin.orderdetail.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/orderdetail/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.orderdetail.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/orderdetail/register.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.orderdetail.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/orderdetail/detail.jsp"></put-attribute>
+	</definition>
+<!-- Product Language-->
+	<definition name="admin.productlanguages.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/productlanguages/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.productlanguages.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/productlanguages/register.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.productlanguages.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/productlanguages/detail.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.productlanguages.productlanguagesdetail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/productlanguages/productlanguagesdetail.jsp"></put-attribute>
+	</definition>
+	<!-- Language-->
+	<definition name="admin.language.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/language/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.language.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/language/register.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.language.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/language/detail.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.language.languagedetail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/language/languagesdetail.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Product Language-->
+	<definition name="admin.categorylanguages.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/categorylanguages/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.categorylanguages.register" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/categorylanguages/register.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.categorylanguages.detail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/categorylanguages/detail.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.categorylanguages.categorylanguagesdetail" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/categorylanguages/categorylanguagesdetail.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="admin.feedback.index" 
+		extends="admin.base.definition">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/admin/feedback/index.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
+	

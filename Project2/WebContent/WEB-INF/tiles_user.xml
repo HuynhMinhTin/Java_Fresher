@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!--  <definition name="user.base.template" template="/WEB-INF/jsp/templates/templateUser.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	-->
+	<definition name="user.base.template" template="/assets/templates/templateUser.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	<definition name="user.base.template_no_left_content" template="/assets/templates/templateUser_no_left_content.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	
+	<definition name="user.category.index" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/category/index.jsp"></put-attribute>
+	</definition>
+	<definition name="user.account.register" extends="user.base.template_no_left_content">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/account/register.jsp"></put-attribute>
+			<!-- User info -->
+	</definition>
+		<definition name="user.information.index" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/information/index.jsp"></put-attribute>
+	</definition>
+	<definition name="user.product.index" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/product/index.jsp"></put-attribute>
+	</definition>
+	<definition name="user.product.detail" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/product/detail.jsp"></put-attribute>
+	</definition>
+	<!-- Shopping cart -->
+	<definition name="user.shoppingcart.index" extends="user.base.template_no_left_content">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/shoppingcart/index.jsp"></put-attribute>
+	</definition>
+	<definition name="user.shoppingcart.cart" extends="user.base.template_no_left_content">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/shoppingcart/cart.jsp"></put-attribute>
+	</definition>
+
+	<definition name="user.shoppingcart.checkout" extends="user.base.template_no_left_content">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/shoppingcart/checkout.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="user.shoppingcart.success" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/shoppingcart/success.jsp"></put-attribute>
+	</definition>
+	<!-- login -->
+
+	<definition name="user.login.index" extends="user.base.template_no_left_content">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/login/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="user.account.welcome" extends="user.base.template">
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/user/account/welcome.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>

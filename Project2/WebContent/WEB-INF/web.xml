@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>redirect.jsp</welcome-file> 
+    </welcome-file-list>
+    
+    <!-- Spring Security -->    
+    <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+    
+    <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			 /WEB-INF/spring-security.xml, 
+			/WEB-INF/spring-database.xml
+		</param-value>
+	</context-param>
+	 
+    <filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		
+	</filter>
+
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>encoding-filter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>encoding-filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- PayPal configuration -->
+	<!--  <context-param>
+		<param-name>authtoken</param-name>
+		<param-value>dr5oN0AldAgoMY1Sfq6jFliOEc4ednYvA_TpyEBLn5wIghfTOOwu5FLVI8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>bussiness</param-name>
+		<param-value>phanhuutri2003-facililator@yahoo.com</param-value>
+	</context-param>
+	-->
+	<context-param>
+		<param-name>authtoken</param-name>
+		<param-value>AcrW-vwUrF3gNnInrDnAmGx87jrgXs9JnSf5cOjmRAVNzGdEgJzn0Lg4KlblPL1XYFTB7bJ_oT4tHDc2</param-value>
+	</context-param>
+	<context-param>
+		<param-name>posturl</param-name>
+		<param-value>http://www.sandbox.paypal.com/cgi-bin/webscr</param-value>
+	</context-param>
+	<context-param>
+		<param-name>bussiness</param-name>
+		<param-value>dtcong011@gmail.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>returnurl</param-name>
+		<param-value>http://localhost:8080/Project/success.html</param-value>
+	</context-param>
+	<jsp-config>
+  <jsp-property-group>
+    <url-pattern>*.jsp</url-pattern>
+    <trim-directive-whitespaces>true</trim-directive-whitespaces>
+  </jsp-property-group>
+</jsp-config>
+</web-app>
