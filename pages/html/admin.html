@@ -80,18 +80,21 @@
 						</thead>
 						<tbody>
 							<tr>
-									<td>1</td>
-									<td>Văn Cường</td>
+								<td>1</td>
+								<td>Văn Cường</td>
 								<td>Nam</td>
 								<td>thehalftheart@mail.com</td>
-									<td>192 Hầm tử</td>
-									<td>
+								<td>192 Hầm tử</td>
+								<td>
 									<div class="quantity buttons_added">
 												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 									</div>
-									</td>
-									</tr>
-								<tr>
+								</td>
+								<td>
+									<input type="button" value="Delete" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+							<tr>
 								<td>2</td>
 								<td>Hoài Minh</td>
 								<td>Nam</td>
@@ -101,21 +104,27 @@
 									<div class="quantity buttons_added">
 												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 													</div>
-									</td>
+								</td>
+								<td>
+									<input type="button" value="Delete" onclick="deleteRow(this)"/>
+								</td>
  
-								</tr>
+							</tr>
 								
-								<tr>
+							<tr>
 									<td>3</td>
 								<td>Quốc Minh</td>
 								<td>Nam</td>
 								<td>quocminh@mail.com</td>
 								<td>192 Hầm tử</td>
 								<td>
-									<div class="quantity buttons_added">
+								<div class="quantity buttons_added">
 												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
 													</div>
-									</td>
+								</td>
+								<td>
+								<input type="button" value="Delete" onclick="deleteRow(this)"/>
+								</td>
  
 							</tr>
 							<tr>
@@ -126,9 +135,11 @@
 								<td>192 Hầm tử</td>
 								<td>
 									<div class="quantity buttons_added">
-												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-													</div>
-									</td>
+											<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+									</div>
+								</td>
+								<td><input type="button" value="Delete" onclick="deleteRow(this)"/>
+								</td>
  
                         </tr>
                     </tbody>
@@ -161,5 +172,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="../js/image-file.js"></script>
 	<script src="../js/itialize-status.js"></script>
+	<script>
+function deleteRow(btn) {
+  var row = btn.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+</script>
 </body>
 </html>
