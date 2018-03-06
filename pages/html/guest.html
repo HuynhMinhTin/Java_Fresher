@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mini File Sharing</title>
 	<!-- Google icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,10 +14,11 @@
 	<!-- bootstrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- customize bootstrap -->
-	<link rel="stylesheet" href="../css/layout-header-class.css">
+	<link rel="stylesheet" href="../css/layout-header-footer.css">
 </head>
-<body>
-	<!-- header -->
+<body ng-app="">
+	<!-- header -->	
+	<!-- <ng-include="'header.html'"></ng-include> -->
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -26,13 +28,13 @@
 				<div class="col-md-8 col-sm-7 direction">				
 					<ul class="nav">						
 						<li class="nav-item">
-							<a class="nav-link active" href="">Home</a>
+							<a class="nav-link active" href="home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="">Link 1</a>
+							<a class="nav-link" href="link1">Link 1</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="">Link 2</a>
+							<a class="nav-link" href="link2">Link 2</a>
 						</li>					  
 					</ul>				
 				</div>	
@@ -123,43 +125,7 @@
 				<!-- file list -->
 				<div class="col-md-10 col-sm-8 file-list">
 					<h6 class="title">file list</h6>
-					<div class="card-deck">
-					  <div class="card">
-					    <img class="card-img-top file">						    
-					    <div class="card-body">
-					      <h5 class="card-title">File title 1</h5>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>						  
-					  <div class="card">
-					    <img class="card-img-top file">
-					    <div class="card-body">
-					      <h5 class="card-title">File title 2</h5>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <img class="card-img-top file">
-					    <div class="card-body">
-					      <h5 class="card-title">File title 3</h5>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <img class="card-img-top file">
-					    <div class="card-body">
-					      <h5 class="card-title">File title 4</h5>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <img class="card-img-top file">						    
-					    <div class="card-body">
-					      <h5 class="card-title">File title 5</h5>
-					      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					    </div>
-					  </div>
-					</div>
+					table of public file		
 				</div>
 			</div>			
 		</div>
@@ -185,7 +151,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- angular 1.6.4 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="../js/image-file.js"></script>
-	<script src="../js/itialize-status.js"></script>
+	<!-- customize javascript -->
+	<script src="../js/image-file.js"></script>	
 </body>
 </html>

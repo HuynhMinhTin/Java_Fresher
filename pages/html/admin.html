@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mini File Sharing</title>
 	<!-- Google icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,10 +14,11 @@
 	<!-- bootstrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- customize bootstrap -->
-	<link rel="stylesheet" href="../css/layout-header-class.css">
+	<link rel="stylesheet" href="../css/layout-header-footer.css">
 </head>
-<body>
-	<!-- header -->
+<body ng-app="">
+	<!-- header -->	
+	<!-- <ng-include="'header.html'"></ng-include> -->
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -26,13 +28,13 @@
 				<div class="col-md-8 col-sm-7 direction">				
 					<ul class="nav">						
 						<li class="nav-item">
-							<a class="nav-link active" href="">Home</a>
+							<a class="nav-link active" href="home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="">Link 1</a>
+							<a class="nav-link" href="link1">Link 1</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="">Link 2</a>
+							<a class="nav-link" href="link2">Link 2</a>
 						</li>					  
 					</ul>				
 				</div>	
@@ -54,94 +56,15 @@
 		</div>		
 	</header>
 
-	<!-- add file button -->		
-	<input type ="button" class="btn btn-success add-file">
 	<!-- content -->
-	<div class="container-fluid margin-top-60">
-		<!-- search nav -->					
-		<div class="row shadow-bottom margin-bottom-15 padding-search-bar">
-			<form class="col-6 inline-form center">				
-				<div class="input-group">
-				  	<input class="form-control" type="text" placeholder="Search" name="username">
-						<button class="btn btn-outline-primary margin-left-8" type="submit">Search</button>					
-				</div>
-				<div class="example">
-			<div class="container">
-				<div class="row" >
-					<h2>Table Striped</h2>
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th name="id">STT</th>
-								<th name="username">Họ Tên</th>
-								<th name="emailuser">Email</th>
-								<th >level</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Văn Cường</td>
-								<td>sssaadart@mail.com</td>
-								<td>
-									<div class="quantity buttons_added">
-												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-									</div>
-								</td>
-								<td>
-									<input type="button" value="Delete" onclick="deleteRow(this)"/>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Hoài Minh</td>
-								<td>hoaiminhit1990@mail.com</td>
-								<td>
-									<div class="quantity buttons_added">
-												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-													</div>
-								</td>
-								<td>
-									<input type="button" value="Delete" onclick="deleteRow(this)"/>
-								</td>
- 
-							</tr>
-								
-							<tr>
-									<td>3</td>
-								<td>Quốc Minh</td>
-								<td>quocminh@mail.com</td>
-								<td>
-								<div class="quantity buttons_added">
-												<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-													</div>
-								</td>
-								<td>
-								<input type="button" value="Delete" onclick="deleteRow(this)"/>
-								</td>
- 
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Huy Phong</td>
-								<td>phongalibaba@mail.com</td>
-								<td>
-									<div class="quantity buttons_added">
-											<input type="number" step="1" min="1" max="3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-									</div>
-								</td>
-								<td><input type="button" value="Delete" onclick="deleteRow(this)"/>
-								</td>
- 
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
- 
+	<main>
+		<div class="container">
+			<!-- user list -->
+			<h6 class="title">user list</h6>
+			<p>table of all user</p>			
 		</div>
-		</div>
-	</div>
+	</main>	
+
 	<!-- footer -->
 	<footer class="footer text-center">
 		<div class="row">
@@ -162,13 +85,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- angular 1.6.4 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="../js/image-file.js"></script>
-	<script src="../js/itialize-status.js"></script>
-	<script>
-function deleteRow(btn) {
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-}
-</script>
+	<!-- customize javascript -->
+	<script src="../js/image-file.js"></script>	
 </body>
 </html>
